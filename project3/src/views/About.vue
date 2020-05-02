@@ -1,5 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is TOL Project 3</h1>
+    <p>Xinying Hou, Yuqing Guo, Shijie Zhu</p>
   </div>
 </template>
