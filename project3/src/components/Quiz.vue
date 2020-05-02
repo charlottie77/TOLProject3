@@ -5,25 +5,26 @@
         <p class="h1-title">Quiz <span>{{round_count}}</span> </p>
       </div>
       <div class="quiz-area">
-        <div class="qa-i" v-for="(item, idx) in quiz_data" :key="idx">
-          <p>{{item.question}}</p>
-          <div class="qai-i">
-            <input type="radio" :value="item.choices[0].is_right" v-model="learner_result[idx]"> 
-            <label>{{item.choices[0].content}}</label>
+        <div class="qa-i" v-for="(item, idx) in quiz_data" :key="idx" >
+          <div v-if="if_new_round[idx]">
+            <p>{{item.question}}</p>
+            <div class="qai-i">
+              <input type="radio" :value="item.choices[0].is_right" v-model="learner_result[idx]"> 
+              <label>{{item.choices[0].content}}</label>
+            </div>
+            <div class="qai-i">
+              <input type="radio" :value="item.choices[1].is_right" v-model="learner_result[idx]"> 
+              <label>{{item.choices[1].content}}</label>
+            </div>
+            <div class="qai-i">
+              <input type="radio" :value="item.choices[2].is_right" v-model="learner_result[idx]"> 
+              <label>{{item.choices[2].content}}</label>
+            </div>
+            <div class="qai-i">
+              <input type="radio" :value="item.choices[3].is_right" v-model="learner_result[idx]"> 
+              <label>{{item.choices[3].content}}</label>
+            </div>
           </div>
-          <div class="qai-i">
-            <input type="radio" :value="item.choices[1].is_right" v-model="learner_result[idx]"> 
-            <label>{{item.choices[1].content}}</label>
-          </div>
-          <div class="qai-i">
-            <input type="radio" :value="item.choices[2].is_right" v-model="learner_result[idx]"> 
-            <label>{{item.choices[2].content}}</label>
-          </div>
-          <div class="qai-i">
-            <input type="radio" :value="item.choices[3].is_right" v-model="learner_result[idx]"> 
-            <label>{{item.choices[3].content}}</label>
-          </div>
-         
         </div>
       </div>
       <button class="cp-btn" @click="assessQuiz()">Done</button>
@@ -135,11 +136,14 @@ export default {
     assessQuiz: function () {
       for(var i = 0; i < 4 ; i ++ ) {
       
-        if(this.learner_result[i] !== true){
-          this.if_new_round[i] = false;
+        if(this.learner_result[i] === true){
+          //if answer is right, do not show the question
+          //this.if_new_round[i] = false;
+          this.$set(this.if_new_round,i,false)
+
         }
       }
-      console.log(this.if_new_round);
+      this.$emit("get-feedback",this.if_new_round);
     }
   },
   created: function () {
