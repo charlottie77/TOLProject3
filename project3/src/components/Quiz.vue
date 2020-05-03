@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <button class="cp-btn" @click="assessQuiz()">Done</button>
+      <button class="cp-btn" @click="assessQuiz()">Submit</button>
      
    
 
@@ -94,6 +94,7 @@ export default {
     if_new_round: [true, true, true, true],
     
   }),
+  props: ["question_select"],
   methods: {
     shuffle: function (array) {
       array.sort(() => Math.random() - 0.5);
@@ -143,11 +144,20 @@ export default {
 
         }
       }
-      this.$emit("get-feedback",this.if_new_round);
+      this.$emit("get-feedback",[this.if_new_round, this.quiz_data, this.learner_result]);
+      
+    },
+    set_if_new: function () {
+      if(this.question_select.length != 0)
+      {
+        console.log(this.question_select)
+        this.if_new_round = this.question_select;
+      }
     }
   },
   created: function () {
     this.generate_questions();
+    this.set_if_new()
 
   }
 }

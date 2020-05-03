@@ -6,12 +6,41 @@
       </div>
       <div>
         <p>score</p>
-        <p>{{result}}</p>
+        <p>{{score}}</p>
+        <div class="quiz-area">
+          <div class="qa-i" v-for="(item, idx) in quiz_data" :key="idx" >
+            <div v-if="show_result[idx]">
+              <p>{{item.question}}</p>
+              <div class="qai-i">
+                <input type="radio" :value="item.choices[0].is_right" disabled v-model="learner_result[idx]" > 
+                <label v-bind:class="{right_answer:(item.choices[0].is_right == true)}">{{item.choices[0].content}}</label>
+              </div>
+              <div class="qai-i">
+                <input type="radio" :value="item.choices[1].is_right" disabled v-model="learner_result[idx]"> 
+                <label  v-bind:class="{right_answer:(item.choices[1].is_right  == true)}">{{item.choices[1].content}}</label>
+              </div>
+              <div class="qai-i">
+                <input type="radio" :value="item.choices[2].is_right" disabled v-model="learner_result[idx]"> 
+                <label v-bind:class="{right_answer:(item.choices[2].is_right  == true)}">{{item.choices[2].content}}</label>
+              </div>
+              <div class="qai-i">
+                <input type="radio" :value="item.choices[3].is_right" disabled v-model="learner_result[idx]" > 
+                <label v-bind:class="{right_answer:(item.choices[3].is_right  == true)}">{{item.choices[3].content}}</label>
+              </div>
+              <div>
+                  <p><span v-if="!result[idx]">Correct!</span> 
+                      <span v-if="result[idx]">Not quite right!</span>
+                      This is explanation!!!!</p>
+              </div>
+            
+            </div>
+          </div>
+       </div>
       </div>
       <div class="feedback-area">
         
       </div>
-      <button class="cp-btn" @click="assessQuiz()">Done</button>
+      <button class="cp-btn" @click="after_feedback()">Done</button>
      
    
 
@@ -46,6 +75,11 @@ label {
   text-align: left;
 }
 
+.right_answer {
+  color: #FFC107;
+  font-weight: 600;
+}
+
 
 .cp-btn {
     background: #F9B623;
@@ -64,24 +98,39 @@ label {
 </style>
 
 <script>
-//import question_data from "@/assets/question.json"
 
-export default {
-  name: 'Feedback',
-  components: {
+  export default {
+    name: 'Feedback',
+    components: {
 
-  },
-  props:["result"],
-  data: () =>({
-    
-    
-  }),
-  methods: {
-    
-  },
-  created: function () {
-    
+    },
+    props:["result","quiz_data","learner_result", "show_result"],
+    data: () =>({
+      points: 0,
+      score: 0,
+      
+      
+    }),
+    methods: {
+      calculate_score: function () {
+        // console.log(this.result)
+        for(var i = 0; i < this.result.length; i++)
+        {
+          if(!this.result[i]){
+            this.points++;
+          }
+        }
+        this.score = Math.ceil((this.points / this.result.length)*100)
+      },
+      after_feedback: function () {
+        this.$emit("after-feedback",this.result);
+        
+      }
+      
+    },
+    created: function () {
+      this.calculate_score();
 
+    }
   }
-}
 </script>
