@@ -2,7 +2,8 @@
   <div class="home">
     <Quiz v-on:get-feedback="setResult" :question_select="result" v-if="stage=='quiz'"></Quiz>
     <Feedback v-on:after-feedback="nextStep" :result="result" :quiz_data="quiz_data" 
-              :learner_result="learner_result" :show_result="temp_result" v-if="stage=='feedback'"></Feedback>
+              :learner_result="learner_result" :show_result="temp_result" :no_score="no_score"
+              :mul_quiz_data="mul_quiz_data" :learner_result_2="learner_result_2" v-if="stage=='feedback'"></Feedback>
     <Cong v-if="stage=='cong'"></Cong>
   </div>
 </template>
@@ -25,13 +26,16 @@ export default {
     result:[],
     stage: "quiz",
     quiz_data: [],
+    mul_quiz_data: [],
     learner_result: [],
-    temp_result: [true, true, true, true]
+    learner_result_2: [],
+    temp_result: [true, true, true, true],
+    no_score: false,
   }),
   methods: {
     setResult: function (_r) {
      
-      [this.result, this.quiz_data, this.learner_result] = _r;
+      [this.result, this.quiz_data, this.learner_result, this.mul_quiz_data, this.learner_result_2] = _r;
       this.stage = "feedback"
     },
     nextStep: function (_r) {
@@ -47,6 +51,7 @@ export default {
         }
       }
        this.temp_result = [...this.result];
+       this.no_score = true;
     }
   }
 }

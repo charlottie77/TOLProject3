@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "question": "Every morning, Rajeev spends an hour alone drawing a portrait from a photograph in the day\u2019s newspaper to improve his portraiture skills (skills drawing a portrait). Yet, despite a year of practice, his drawing skills do not seem to improved. Why might simply practicing a portrait a day not yield an improvement?",
+            "right_answers": [
+                "People generally can't improve to a higher level without some figure telling them what that higher level is/looks like. For all we know, Rajeev is drawing stick figures and thinks them pretty good. He needs someone/something to evaluate him and tell him what parts of his portrait need improving on so that he can practice those particular aspects.",
+                "Despite doing so much practice, there is no one to give Rajeev feedback on his errors and remedial training based on that feedback. So while Rajeev is practicing a lot, he is not doing deliberate practice which focuses on correcting his errors and then improving his skill.",
+                "Currently, Rajeev is not receiving feedback and remedial instruction for his work which are an integral part of deliberate practice.",
+                "He is not doing deliberate practice. That is, his practice might not be focused on the part that needs improvement, there is no feedback on his performance from experts.",
+                "Because he doesn't have a mentor who diagnoses his problems about painting. He doesn't get immediate feedback and remedial training.",
+                "Rajiv may not know the optimal techniques for drawing because of a lack of explicit instruction, he has no supervision in terms of mistakes that he's making and he gets no feedback or remedial training for the components he's weak at.",
+                "Rajeev is not improving because he is not undergoing deliberate practice. He is drawing alone, which means that one of the conditions of deliberate practice is not being met: he is not being supervised by a teacher to diagnose errors.",
+                "Because he is neither given explicit instruction about the best method, nor supervised by a teacher to diagnose errors and get informative feedback and remedial training. Repeated practice at the same level won't lead to performance.",
+                "He is not doing deliberate practice. B/c there is no feedback provided.",
+                "Reason could be because he didn't get corrective feedback."
+            ],
+            "wrong_answers": [
+                "it's not deliberate practice",
+                "Even without deliberate practice, Rajeev could improve his skill by practice. If his skill doesn't improve at all, that is not a problem of deliberate practice, it's a problem that he didn't practice the same skill every day. He is not practicing a specific skill (draw the eye of the portrait). Although the lack of feedback is also important, it's more important to focus on the same practice)",
+                "The task of creating a portrait is a complex one and should be studied step by step rather than in full. Hence, Rajeev should identify what parts of the portrait are problematic and practice them regularly instead of drawing new full portrait every day.",
+                "lack of deliberate practice, to say, always practice a general and broad task set without pinpointing where exactly is not good."
+            ]
+        },
+        {
+            "question": "Many teachers who have used Jigsaw report that students start to see themselves in a different light -- as more competent, likable, and positive contributors to the classroom. Does the Jigsaw method create a growth-intelligence mindset?",
+            "right_answers": [
+                "No, this was stated in the lecture that Jigsaw is a black box in terms of showing the theory of intelligence",
+                "Probably not (though it's not impossible). Jigsaw is mostly focused around empathy and interpersonal skills. It does not explicitly teach learners how brains and learning works, which is usually needed to convert students to growth mindsets. Rather, it teaches students that they can work with many different kinds of people, and achieve more than they previously thought (though it doesn't teach them why they can do these things)",
+                "Not really, jigsaw does not help students understand the brain or intelligence which is a prerequisite for a growth mindset.",
+                "Since the Jigsaw method does not reveal the details of how it is effective, we cannot assess if it actually creates a growth-intelligence mindset as it could also be attributed to a talent in that given domain that was not previously exposed. It could create a growth-intelligence mindset, but it's not a guarantee. Hence, my answer is no.",
+                "I would say no, because growth mindset is an idea that through struggling one can do better and Jigsaw does not really do this. Moreover, students usually misunderstand even why jigsaw works.",
+                "No, because it doesn? implicate how the brain works, and the malleable nature of intelligence. Jigsaw doesn't help students or teachers discover why it works, It doesn't help intelligence either.",
+                "Jigsaw is about collaborative learning and empathy, but not actually about growth mindset."
+            ],
+            "wrong_answers": [
+                "Yes indeed! The jigsaw method creates a growth mindset because through the process students are going through walks them through a process in which their own competence is demonstrated back to them and they are supported by the other students on their team. This translates to them feeling their own ability to succeed and increase their intelligence in the future.",
+                "Yes, students are encouraged to learn , express, they are seeing others rely on themselves and see themselves improve.",
+                "I think it does. Especially for those low-achieving students, Jigsaw enables them to learn from other members (in the expert group as well as Jigsaw group), knowing that they could also learn as well as their peers. Also, as Jigsaw team will rely on one another to learn that part of knowledge, each person will feel that they are making contributions.",
+                "Yes, for example carlos, have developed a growth-mindset, while he thought he was stupid he later think he is smart."
+            ]
+        }
+    ]
+}

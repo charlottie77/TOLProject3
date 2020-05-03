@@ -1,0 +1,42 @@
+{
+    "data": [
+        {
+            "question": "Dan wants to improve his golf game. Every day, he practices one golf stroke for an hour, and records his practice session on video. After his practice, he watches the recording, and plans on what changes to make the next day. Assume he has no other golf instruction. Is Dan engaged in deliberate practice? Why? Select all applied. ",
+            "right_answers": [
+                "Not exactly. To engage in deliberate practice, one must be given explicit instruction about the best method. Since Dan is simply reflecting on his own method and has never compared it with a best method given to him by an expert, this step is not met. You could perhaps argue that the second component of deliberate practice is met, he is his own teacher and diagnosis his own errors. But without the first point, this is meaningless. Finally, the third part of deliberate practice of getting informative feedback and remedial training could be argued that he's doing this for himself. But again, without being able to compare it with a best method, this is meaningless.",
+                "Dan is not engaged in deliberate practice because of the following reasons : 1. There is no external agent giving him feedback on what he is doing wrong and how to correct it. (corrective feedback). Some of the errors might not be visible to Dan and so it is important to get that feedback from an external agent like a teacher. 2. Remedial training is effective if it is taken immediately and not after some time of getting immediate feedback from an external agent.",
+                "Dan is not engaged in deliberate practice because he is missing expert feedback. He may be unable to precisely diagnose his mistakes and/or to formulate an optimal plan to address them without supervision. Additionally waiting until the next day to address problems undermines his ability to relate errors to corrections and further removes his routine from deliberate practice.",
+                "Dan is not receiving feedback from an external agent as such he may miss errors that he made that someone else might catch. He is also not receiving immediate feedback and both of these things are necessary for deliberate practice. In the options below, I have not selected \"No, because he is not able to practice corrections immediately\" as receiving immediate feedback is not the same as being able to practice corrections on that feedback immediately.",
+                "No because, he is lacking (1) explicit instructions about the best method (2) supervised by a teacher to diagnose erorrs because he s diagnosing them himself and (3) immediate feedback as he watched the videos at the end of the day and gives himself feedback",
+                "Dan in this case is not able to practice his corrections at the time the errror is spotted. This is not ideal as golf is not a sport that strains the body heavily and thus, it is not the case unlike powerlifting or bodybuilding where the instance for deliberate practice has a limitation on the amount of activity. Additionally, Dan does not get feedback from an expert instructor. Therefore he may see far fewer errors than an instructor does.",
+                "No, Dan is not engaged in deliberate practice because he is nothing supervised by a teacher to diagnose errors. This is an element of the definition of deliberate practice.",
+                "It is. Because it includes practice on a specific skill, supervised by himself, get feedback from himself, and remedial training the next day.",
+                "No, he needs external agent to give informative feedback, as he may be \"unskilled and unaware of it\". Also he needs to receive informative feedback and practise again in a loop which he can not do in the described way.",
+                "The feedback needs to be given by an external agent",
+                "He did not get external feedback on tasks performance."
+            ],
+            "wrong_answers": [
+                "Yes, he has isolated a specific task, practices it repeatedly and reviews his sessions to narrow on improvements.",
+                "No, because deliberate practice requires that an external agent provide feedback to the learner."
+            ]
+        },
+        {
+            "question": "Mark is learning to play the guitar. After long hours of practice, he mastered playing his favorite song. Write one growth-mindset building feedback his instructor could give him. Select all applied.",
+            "right_answers": [
+                "You did a great job putting efforts into practice and it paid off!",
+                "Citing the recommended paper, \"Growth-mind-set interventions convey that intelligence can grow when students work hard on challenging tasks?nd thus that struggle is an opportunity for growth, not a sign that a student is incapable of learning.\" Given that, option C seems correct as it shows that through struggling, Mark managed to improve his ability to keep the right rhythm.",
+                "Good job! You could learn songs by practice. Keep on that!",
+                "Great effort! You persisted even when it was frustrating, and now you can play your favorite song! If you stay determined like that, you can learn to play anything!",
+                "As Mark has practiced fo long hours, he has probably overcome many difficulties while learning his favorite song. The instructor should point out these difficulties and how Mark overcame them as constructive feedback which can help build the growth-mindset by highlighting that he has already grown from his initial stage.",
+                "You did an excellent job maintaining the right rhythm throughout this song. You've grown tremendously in your skills over the past few days.",
+                "Your persistence in practicing chord changes resulted in you altering this song.",
+                "Great, you are doing well on this song because of your hard practice. You could do better on other songs and more complex skills if you continue to practice like this.",
+                "Your hard work has paid off! Keep up with the great work!"
+            ],
+            "wrong_answers": [
+                "Remind him of long term goals, and the growth that is still possible and how his current achievement reflects that. Basically tell him how great he's done and tell him he's going to continue to better in the future.",
+                "One of the most important things about growth mindset is giving feedback on the task that Mark is doing and not on his own personality of him being a talented musician. One growth mindset instruction his instructor could give him is \"Great work in your performance today. Keep up with your perseverance."
+            ]
+        }
+    ]
+}
